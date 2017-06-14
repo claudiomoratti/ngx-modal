@@ -47,14 +47,16 @@ export class ModalFooter {
             </div>
             <div class="modal-footer">
                 <ng-content select="modal-footer"></ng-content>
-                <button *ngIf="cancelButtonLabel" type="button" class="btn btn-default" data-dismiss="modal" (click)="close()">{{ cancelButtonLabel }}</button>
-                <button *ngIf="submitButtonLabel" type="button" class="btn btn-primary" (click)="onSubmit.emit(undefined)">{{ submitButtonLabel }}</button>
             </div>
         </div>
     </div>
 </div>
 `
 })
+
+// <button *ngIf="cancelButtonLabel" type="button" class="btn btn-default" data-dismiss="modal" (click)="close()">{{ cancelButtonLabel }}</button>
+// <button *ngIf="submitButtonLabel" type="button" class="btn btn-primary" (click)="onSubmit.emit(undefined)">{{ submitButtonLabel }}</button>
+
 export class Modal {
 
     // -------------------------------------------------------------------------
