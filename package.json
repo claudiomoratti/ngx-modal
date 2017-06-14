@@ -9,6 +9,9 @@
     "name": "Umed Khudoiberdiev",
     "email": "pleerock.me@gmail.com"
   },
+  "scripts": {
+    "postinstall": "'node_modules/.bin/ngc' -p tsconfig-aot.json"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/pleerock/ngx-modal.git"
