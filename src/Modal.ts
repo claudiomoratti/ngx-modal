@@ -51,7 +51,8 @@ export class ModalFooter {
         </div>
     </div>
 </div>
-`
+`,
+styleUrls: ['modalCSS.css'],
 })
 
 // <button *ngIf="cancelButtonLabel" type="button" class="btn btn-default" data-dismiss="modal" (click)="close()">{{ cancelButtonLabel }}</button>
