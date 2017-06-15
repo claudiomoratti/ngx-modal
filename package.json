@@ -10,7 +10,7 @@
     "email": "pleerock.me@gmail.com"
   },
   "scripts": {
-    "postinstall": "ngc -p tsconfig-aot.json"
+    "postinstall": "tsc -p tsconfig-aot.json"
   },
   "repository": {
     "type": "git",
