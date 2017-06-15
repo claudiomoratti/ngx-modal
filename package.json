@@ -12,9 +12,6 @@
   "scripts": {
     "postinstall": "ngc -p tsconfig-aot.json"
   },
-  "styles": [
-    "modalCSS.css"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pleerock/ngx-modal.git"
