@@ -1,3 +1,9 @@
+# ngx-modal
+
+Open modal window (dialog box) for your angular2 applications.
+
+> This is a forked repository, forked from pleerock/ngx-modal
+
 ## Latest import headers
 
 In your component.ts files where you need to access the "Modal" object, add the following line at the top:
@@ -64,19 +70,11 @@ export class AppModule { }
 </modal>
 ```
 
-> This repository is for demonstration purposes of how it can be implemented in Angular and is not maintaned.
-Please fork and maintain your own version of this repository.
-
-
-# ngx-modal
-
-Open modal window (dialog box) for your angular2 applications using bootstrap3. If you don't want to use it without bootstrap - simply create proper css classes. Please star a project if you liked it, or create an issue if you have problems with it.
-
 ## Installation
 
 1. Install npm module:
     
-    `npm install ngx-modal --save`
+    `npm install https://github.com/adamitchell/ngx-modal.git --save`
 
 2. If you are using system.js you may want to add this into `map` and `package` config:
 
