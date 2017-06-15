@@ -148,7 +148,7 @@ export class Modal {
         document.body.className += " modal-open";
     }
 
-    public close(...args: any[]) {
+    close(...args: any[]) {
         if (!this.isOpened)
             return;
 
