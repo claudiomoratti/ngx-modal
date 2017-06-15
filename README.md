@@ -1,3 +1,38 @@
+## Latest import headers
+
+In your component.ts files where you need to access the "Modal" object, add the following line at the top:
+```typescript
+import { Modal } from 'ngx-modal/build/package/';
+```
+
+In your app.module.ts file, here is an example of adding 'ModalModule' that you'll need:
+```typescript
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './controllers/login.component';
+import { AppComponent } from './app.component';
+import { LoginService } from './services/login.service';
+
+import { ModalModule } from 'ngx-modal/build/package/';
+
+@NgModule({
+  declarations: [
+    LoginComponent,
+    AppComponent
+  ],
+  imports: [
+    HttpModule,
+    AppRoutingModule,
+    ModalModule
+  ],
+  providers: [LoginService],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+```
+
 ## Latest html example
 
 ```html
