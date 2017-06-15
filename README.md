@@ -1,3 +1,34 @@
+## Latest html example
+
+```html
+<modal #passwordModal
+        title=""
+        modalClass="changePasswordModal"
+        [hideCloseButton]="true"
+        [closeOnEscape]="true"
+        [closeOnOutsideClick]="true"
+        (onOpen)="passwordModalOpen()"
+        (onClose)="passwordModalClose()">
+    <modal-header>
+      <a class="modal-button-cancel" (click)="passwordModal.close()">Cancel</a>
+      <h1 class="modal-title">Change Password</h1>      
+    </modal-header>
+    <modal-content>
+      <div class="changePasswordModal">
+        <div class="modal-input">
+          <input #input1 [(ngModel)]="oldPassword" type="password" placeholder="Old Password" autofocus (keydown)="keyDownFunction($event,passwordModal)" />
+          <input #input2 [(ngModel)]="newPassword" type="password" placeholder="New Password" (ngModelChange)="blankOutError()" (keydown)="keyDownFunction($event,passwordModal)" />
+          <input #input3 [(ngModel)]="retypePassword" type="password" placeholder="Retype Password" (ngModelChange)="checkRetypePassword()" (keydown)="keyDownFunction($event,passwordModal)" />
+          <h5 class="passwordError">{{passwordError}}</h5>
+        </div>
+        <button class="modal-button-done" (click)="submitChangePassword(passwordModal)">Done</button>
+      </div>
+    </modal-content>
+    <!-- <modal-footer>
+    </modal-footer>       -->
+</modal>
+```
+
 > This repository is for demonstration purposes of how it can be implemented in Angular and is not maintaned.
 Please fork and maintain your own version of this repository.
 
