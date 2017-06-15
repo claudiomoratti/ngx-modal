@@ -75,6 +75,7 @@ export class AppModule { }
 1. Install npm module:
     
     `npm install https://github.com/adamitchell/ngx-modal.git --save`
+    > If you do a fresh 'npm install', this ngx-modal plugin should automatically install itself and you won't have to do the above line.
 
 2. If you are using system.js you may want to add this into `map` and `package` config:
 
